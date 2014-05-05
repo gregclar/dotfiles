@@ -1,0 +1,22 @@
+[user]
+	name = Greg Clarke
+	email = gregbclarke@gmail.com
+
+[instaweb]
+  httpd = /usr/local/sbin/lighttpd
+  local = true
+
+[core]
+	excludesfile = /Users/gregc/.gitignore_global
+	quotepath = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	status = auto
+[push]
+	default = simple
+
